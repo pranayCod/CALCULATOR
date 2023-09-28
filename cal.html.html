@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="cal1.css">
+</head>
+<body>
+  <div class="calc1">
+    
+    <form name="fm">
+      <input type="text" id="ans" name="answer"><br><br>
+      <input type="button" value="1" onclick="fm.answer.value+='1'">
+      <input type="button" value="2" onclick="fm.answer.value+='2'">
+      <input type="button" value="3" onclick="fm.answer.value+='3'">
+      <input type="button" value="+" onclick="fm.answer.value+='+'"><br>
+
+      <input type="button" value="4" onclick="fm.answer.value+='4'">
+      <input type="button" value="5" onclick="fm.answer.value+='5'">
+      <input type="button" value="6" onclick="fm.answer.value+='6'">
+      <input type="button" value="-" onclick="fm.answer.value+='-'"><br>
+
+      <input type="button" value="7" onclick="fm.answer.value+='7'">
+      <input type="button" value="8" onclick="fm.answer.value+='8'">
+      <input type="button" value="9" onclick="fm.answer.value+='9'">
+      <input type="button" value="*" onclick="fm.answer.value+='*'"><br>
+
+      <input type="button" value="/" onclick="fm.answer.value+='/'">
+      <input type="button" value="0" onclick="fm.answer.value+='0'">
+      <input type="button" value="." onclick="fm.answer.value+='.'"><br>
+
+      <input type="button" value="=" onclick="fm.answer.value=eval(fm.answer.value)">
+      <input type="button" value="clear" id="clear" onclick="fm.answer.value=''">
+    
+    </form>
+
+  </div>
+
+</body>
+</html>
